@@ -1,5 +1,3 @@
-// ignore_for_file: prefer_const_constructors, unused_local_variable, camel_case_types
-
 import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
 import 'package:hive_flutter/adapters.dart';

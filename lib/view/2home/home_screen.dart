@@ -1,5 +1,3 @@
-// ignore_for_file: camel_case_types, prefer_const_constructors, sort_child_properties_last, unnecessary_string_interpolations, sized_box_for_whitespace
-
 import 'package:flutter/material.dart';
 import 'package:flutter_slidable/flutter_slidable.dart';
 import 'package:get/get.dart';
@@ -9,8 +7,6 @@ import 'package:notes_qsoft/view/2home/spec_screen.dart';
 import 'package:notes_qsoft/view/3draw/privacy.dart';
 import 'package:notes_qsoft/view/3draw/support.dart';
 import 'package:notes_qsoft/view/3draw/info.dart';
-
-
 
 class Home_Screen extends StatefulWidget {
   const Home_Screen({super.key});
@@ -22,6 +18,7 @@ class Home_Screen extends StatefulWidget {
 class _Home_ScreenState extends State<Home_Screen> {
 
   final catList=[
+    'Категория не выбрана',
     'Личное',
     'Работа',
     'Здоровье',
@@ -33,8 +30,7 @@ class _Home_ScreenState extends State<Home_Screen> {
     'Семья',
     'Хобби',
   ];
-
-  final titleController=TextEditingController();
+final titleController=TextEditingController();
   final descController=TextEditingController();
 
   var box = Hive.box<NotesModel>('noteBox');
@@ -80,7 +76,7 @@ bool isSwitched=false;
       appBar: AppBar(
         title: const Row(
           children: [
-            Text('NOTES',style: TextStyle(color: Color.fromARGB(255, 235, 237, 238)),)
+            Text('NOTES',style: TextStyle(color: Color.fromARGB(255, 255, 255, 255)),)
           ],
         ),
         actions: [
@@ -91,7 +87,7 @@ bool isSwitched=false;
             },
           ),
         ],
-        backgroundColor: Color.fromARGB(255, 151, 150, 150),
+        backgroundColor: Color.fromARGB(255, 216, 123, 123),
 
         elevation: 0,
         iconTheme: const IconThemeData(color: Colors.white),
